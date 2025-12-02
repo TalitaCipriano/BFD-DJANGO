@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto</title>
+</head>
+<body>
+    <h1>Blog da Talita</h1>
+    <h3>Postagens</h3>
+    <p>Meu post do blog</p>
+    {% for post in post_list %}
+    Criado em: {{post.creat_date}}
+    <h2>{{post.title}}</h2>
+        {{post.text}}
+        <p></p>
+        <hr>
+    {% endfor %}
+    
+</body>
+</html>
